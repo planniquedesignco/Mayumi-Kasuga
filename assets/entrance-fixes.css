@@ -1,0 +1,8 @@
+/* Entrance is a locked cinematic screen until ENTER is clicked. */
+html:has(body.intro-open),body.intro-open{overflow:hidden!important;overscroll-behavior:none!important;height:100%!important}
+body.intro-open .entry{position:fixed!important;inset:0!important;height:100dvh!important;max-height:100dvh!important;overflow:hidden!important;overscroll-behavior:contain!important;touch-action:none!important}
+body.intro-open .entry button{touch-action:manipulation!important}
+.entry-inner:after{content:none!important;box-shadow:none!important;animation:none!important}
+.entry-glow{display:none!important}
+#entrySound{cursor:pointer;position:relative;z-index:10;min-height:44px}
+@media(max-width:750px){body.intro-open .entry{height:100svh!important;max-height:100svh!important}.entry-inner{max-height:100svh!important;overflow:visible!important}}

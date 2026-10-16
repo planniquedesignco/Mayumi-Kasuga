@@ -1,0 +1,23 @@
+/* A cinematic, responsive entrance-to-home transition. */
+.entry{transition:none!important;will-change:opacity,transform}
+.entry.cinematic-exit{transform:none!important;opacity:1!important;pointer-events:none!important}
+.entry.cinematic-exit .entry-inner{animation:mayumiTextOut .68s cubic-bezier(.2,.7,.2,1) both}
+.entry.cinematic-exit .entrance-art,.entry.cinematic-exit .entry-bg{animation:mayumiImagePush 1.7s cubic-bezier(.18,.7,.18,1) both!important}
+.entry.cinematic-exit::before{content:"";position:absolute;inset:0;z-index:6;background:radial-gradient(ellipse at 50% 52%,transparent 0%,rgba(15,3,24,.12) 40%,rgba(15,3,24,.65) 100%);animation:mayumiFadeLayer 1.45s ease both;pointer-events:none}
+.entry.cinematic-exit .entry-side,.entry.cinematic-exit .entry-foot{opacity:0;transition:opacity .4s}
+.entry.cinematic-exit{animation:mayumiCurtainAway 1.7s cubic-bezier(.77,0,.19,1) both!important}
+body.mayumi-opening main{animation:mayumiMainReveal 1.4s cubic-bezier(.2,.7,.2,1) both}
+body.mayumi-opening #header{animation:mayumiHeaderReveal 1.2s ease both}
+body.mayumi-opening main .hero .wrap{animation:mayumiHeroRise 1.3s cubic-bezier(.2,.7,.2,1) .2s both}
+#enterSite{position:relative;overflow:hidden;isolation:isolate}
+#enterSite::after{content:"";position:absolute;inset:-90% auto -90% -50%;width:35%;transform:rotate(25deg) translateX(-200%);background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent);pointer-events:none;animation:mayumiShimmer 5s ease-in-out infinite}
+@keyframes mayumiTextOut{0%{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}100%{opacity:0;transform:translateY(-28px) scale(1.035);filter:blur(8px)}}
+@keyframes mayumiImagePush{0%{transform:scale(1);filter:brightness(1)}100%{transform:scale(1.1);filter:brightness(.68)}}
+@keyframes mayumiCurtainAway{0%,35%{opacity:1;clip-path:inset(0 0 0 0)}65%{opacity:1;clip-path:inset(0 0 0 0)}100%{opacity:1;clip-path:inset(0 0 100% 0)}}
+@keyframes mayumiFadeLayer{0%{opacity:0}45%{opacity:1}100%{opacity:0}}
+@keyframes mayumiMainReveal{from{filter:blur(10px) brightness(.65);transform:scale(1.035)}to{filter:none;transform:none}}
+@keyframes mayumiHeaderReveal{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:none}}
+@keyframes mayumiHeroRise{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+@keyframes mayumiShimmer{0%,70%,100%{transform:rotate(25deg) translateX(-240%)}84%{transform:rotate(25deg) translateX(900%)}}
+@media(max-width:750px){.entry.cinematic-exit .entrance-art{transform-origin:65% center}body.mayumi-opening main .hero .wrap{animation-duration:1s}}
+@media(prefers-reduced-motion:reduce){.entry.cinematic-exit,.entry.cinematic-exit .entry-inner,.entry.cinematic-exit .entrance-art,body.mayumi-opening main,body.mayumi-opening #header,body.mayumi-opening main .hero .wrap{animation:none!important}.entry.cinematic-exit{opacity:0!important;transition:opacity .2s!important}#enterSite::after{animation:none!important}}

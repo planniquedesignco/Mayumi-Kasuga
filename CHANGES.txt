@@ -1,8 +1,0 @@
-Mayumi Kasuga responsive music edition
-- Fullscreen mobile navigation overlay with X close icon and scroll lock
-- Album-cover music gallery driven by existing admin Music entries
-- Tap cover play to use existing audio player
-- Touch-friendly scroll-snap galleries for songs, products and artist profiles
-- Desktop pointer parallax and restrained interactive hover motion
-- All existing CMS, orders and checkout retained
-- Local browser storage still used, no shared server backend or live payment

@@ -1,0 +1,7 @@
+MAYUMI KASUGA CONTENT MANAGEMENT
+
+Open /admin/ and use Website for banners and global text. Products, Music, Events and Artists each have image upload controls and editable fields. Media Library allows multiple image uploads and copyable image references.
+
+Images and edits are saved in browser localStorage, not a shared server. Large photos may exhaust storage; compress photos first. Use Data & Backup to export JSON and restore in another browser. Refresh the public page in the SAME browser to see updates. Real multi-user synchronization requires a hosted backend and database.
+
+Checkout is simulated and does not collect real payments.

@@ -1,0 +1,9 @@
+MAYUMI MUSIC / EVENTS MANAGEMENT
+
+Music: Admin > Music > Edit. For an embedded YouTube player, paste a YouTube watch URL into Audio preview URL or asset path. Clicking Play track opens the embedded video without leaving the site. For audio-only, use a direct MP3/WAV/OGG file URL. Some YouTube owners disable embedding.
+
+Entrance: Admin > Website > Entrance music. Choose a track with a direct audio file. YouTube links cannot serve as background audio. Browsers may block unmuted autoplay until user interaction.
+
+Events: Admin > Events > Edit > Event visibility / button: Details soon, Show event details, Tickets / external link, Hidden. Details opens a popup; tickets opens the URL.
+
+Changes remain browser-local, not shared across devices.

@@ -6,3 +6,23 @@ body.intro-open .entry button{touch-action:manipulation!important}
 .entry-glow{display:none!important}
 #entrySound{cursor:pointer;position:relative;z-index:10;min-height:44px}
 @media(max-width:750px){body.intro-open .entry{height:100svh!important;max-height:100svh!important}.entry-inner{max-height:100svh!important;overflow:visible!important}}
+
+/* Cross-browser fix: the desktop 16:9 aspect-ratio previously shrank the fixed
+   entrance horizontally on tall or differently scaled displays, exposing the site. */
+.entry,body.intro-open .entry{
+  box-sizing:border-box!important;
+  aspect-ratio:auto!important;
+  position:fixed!important;
+  inset:0!important;
+  left:0!important;
+  right:0!important;
+  width:100%!important;
+  min-width:100%!important;
+  max-width:none!important;
+  height:100vh!important;
+  height:100dvh!important;
+  max-height:none!important;
+  margin:0!important;
+}
+.entry .entrance-art{inset:0!important;width:100%!important;height:100%!important;background-position:center center!important;background-repeat:no-repeat!important;background-size:cover!important}
+@media(max-width:750px){.entry,body.intro-open .entry{height:100svh!important}}

@@ -1,1 +1,0 @@
-Upload the files to your existing GitHub repository, keeping the folder structure. No Cloudflare Worker changes. Test shared CMS saving and mobile menu after deployment. Spotify links open externally; browser autoplay restrictions apply. YouTube embedding may be blocked by video owners.

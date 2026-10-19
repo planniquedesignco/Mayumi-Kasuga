@@ -1,0 +1,13 @@
+/* Mayumi mobile navigation: single authoritative overlay styling. */
+@media(max-width:900px){
+ #header{position:fixed!important;inset:0 0 auto!important;z-index:2147483000!important;overflow:visible!important;transform:none!important}
+ #header>header{position:relative!important;overflow:visible!important;background:#fff9f7!important}
+ #header .mobilemenu{display:none!important}
+ #header .mobilemenu.open{display:flex!important;position:fixed!important;inset:var(--mayumi-header-height,72px) 0 0!important;width:100%!important;height:calc(100dvh - var(--mayumi-header-height,72px))!important;max-height:none!important;box-sizing:border-box!important;z-index:2147483001!important;background:linear-gradient(155deg,#21112a,#422044)!important;flex-direction:column!important;justify-content:center!important;align-items:stretch!important;padding:20px 8% max(30px,env(safe-area-inset-bottom))!important;gap:0!important;overflow-y:auto!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important;transform:none!important;animation:none!important;box-shadow:none!important}
+ #header .mobilemenu.open a{display:block!important;color:#fff3f9!important;font:500 clamp(27px,7vw,39px)/1.25 Georgia,serif!important;letter-spacing:-.025em!important;padding:13px 3px!important;margin:0!important;border-bottom:1px solid rgba(255,255,255,.17)!important;text-decoration:none!important;opacity:1!important;visibility:visible!important;transform:none!important;animation:none!important}
+ #header .mobilemenu.open a:focus-visible{outline:2px solid #f7a5cf;outline-offset:2px}
+ #header .mobilemenu.open:after{content:'MUSIC  ·  MOVEMENT  ·  MAYUMI';display:block;color:#e9a3c5;letter-spacing:.18em;font:500 10px/1.5 Arial,sans-serif;padding:25px 3px 0}
+ #header .hamb{position:relative!important;z-index:2147483002!important}
+ body.nav-open{overflow:hidden!important}
+}
+@media(max-width:900px) and (max-height:610px){#header .mobilemenu.open{justify-content:flex-start!important}#header .mobilemenu.open a{padding:8px 3px!important;font-size:25px!important}}

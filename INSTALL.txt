@@ -1,0 +1,1 @@
+Replace the matching files in the Mayumi-Kasuga GitHub repository. Preserve their folders. No Worker/D1/R2 changes. Test mobile navigation and artist links after publishing.

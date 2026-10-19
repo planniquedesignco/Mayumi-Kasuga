@@ -1,0 +1,1 @@
+Replace only these seven HTML files at the same paths in your GitHub repository. Keep all other files. This shows the navigation immediately, before the Cloudflare content request completes. The normal app.js still replaces it with the interactive navigation once loaded. Based on Step 7 and entrance-refresh-fix files.

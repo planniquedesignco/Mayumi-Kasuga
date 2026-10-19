@@ -1,0 +1,10 @@
+
+/* Mobile navigation reliability: fixed header and full viewport overlay. */
+@media(max-width:900px){
+ #header{position:fixed!important;top:0!important;left:0;right:0;width:100%;z-index:99999!important;isolation:auto!important;overflow:visible!important;transform:none!important}
+ #header>header{position:relative!important;overflow:visible!important;transform:none!important}
+ #header .mobilemenu.open{position:fixed!important;display:flex!important;top:var(--mayumi-header-height,72px)!important;left:0!important;right:0!important;bottom:0!important;height:calc(100dvh - var(--mayumi-header-height,72px))!important;z-index:999999!important;overflow-y:auto!important;background:#fff7f4!important;visibility:visible!important;opacity:1!important;transform:none!important;pointer-events:auto!important}
+ body{padding-top:var(--mayumi-header-height,72px)!important}
+ body.nav-open{overflow:hidden!important}
+ #header .hamb{position:relative;z-index:1000000}
+}

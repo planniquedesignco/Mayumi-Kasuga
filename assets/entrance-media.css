@@ -1,0 +1,1 @@
+.entry{isolation:isolate}.mayumi-intro-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;pointer-events:none;z-index:0;opacity:.65}.entry-inner,.entry-side,.sound-control{z-index:5;position:relative}.entry-bg,.entrance-art{pointer-events:none}@media(max-width:750px){.mayumi-intro-video{height:100%;width:100%;object-fit:cover}}
